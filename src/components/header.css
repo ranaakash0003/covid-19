@@ -1,0 +1,15 @@
+.nav-container{
+    height: 70px;
+    width: 100%;
+    background: rgb(6, 0, 12);
+    opacity: .8;
+}
+
+.nav-container h5{
+    color: white;
+    display: block;
+    margin:auto;
+    text-align: center;
+    padding-top: 20px;
+    font-size: large;
+}

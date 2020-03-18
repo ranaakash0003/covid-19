@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-
 import "./home.css";
+
 const Home = () => {
   const [confimedCount, setConfirmedCount] = useState(0);
   const [recoverCount, setrecoverCount] = useState(0);

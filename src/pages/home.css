@@ -1,0 +1,37 @@
+.home-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.section-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+/* .section-data{
+    flex:1;
+} */
+.confirmed{
+    padding: 10px;
+    border-radius: 10px;
+    background: rgb(201, 147, 49);
+    font-weight: 500;
+    color: white;
+}
+
+.recovery{
+    padding: 10px;
+    border-radius: 10px;
+    background: rgb(60, 175, 89);
+    font-weight: 500;
+    color: white;
+}
+.death{
+    padding: 10px;
+    border-radius: 10px;
+    background: rgb(219, 61, 33);
+    font-weight: 500;
+    color: white;
+    display: block;
+    margin: auto;
+}

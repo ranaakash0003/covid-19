@@ -10,7 +10,11 @@ const Home = () => {
     getConfirmedData();
     getRecoverdData();
     getDeathData();
-  }, []);
+  }, [
+    setTimeout(() => {
+      window.location.reload();
+    }, 10000)
+  ]);
 
   async function getConfirmedData() {
     const res = await axios("https://covid19.mathdro.id/api/");
@@ -22,22 +26,24 @@ const Home = () => {
   }
   async function getDeathData() {
     const res = await axios("https://covid19.mathdro.id/api/");
-    setdeathCount(res.data.deaths.value)
+    setdeathCount(res.data.deaths.value);
   }
 
   return (
-    <div className="home-container">
-      <div className="section-container">
-        <h1>{confimedCount}</h1>
-        <span className="confirmed">CONFIRMED</span>
-      </div>
-      <div className="section-container">
-        <h1>{recoverCount}</h1>
-        <span className="recovery">RECOVERED</span>
-      </div>
-      <div className="section-container">
-        <h1>{deathCount}</h1>
-        <span className="death">DEATH</span>
+    <div>
+      <div className="home-container">
+        <div className="section-container">
+          <h1>{confimedCount}</h1>
+          <span className="confirmed">CONFIRMED</span>
+        </div>
+        <div className="section-container">
+          <h1>{recoverCount}</h1>
+          <span className="recovery">RECOVERED</span>
+        </div>
+        <div className="section-container">
+          <h1>{deathCount}</h1>
+          <span className="death">DEATH</span>
+        </div>
       </div>
     </div>
   );

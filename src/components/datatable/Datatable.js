@@ -79,7 +79,6 @@ const Datatable = () => {
     //   console.log("FFF$$$$$$$", res.data);
       setGlobalData(res.data);
     }
-    // console.log("DATAAAAAAAAAA", globalData);
 
   return (
     <div className="datatable-container">

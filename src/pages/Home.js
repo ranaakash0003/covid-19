@@ -23,7 +23,6 @@ const Home = () => {
     setConfirmedCount(res.data.cases);
     setrecoverCount(res.data.recovered);
     setdeathCount(res.data.deaths);
-    console.log("CORONADAT COMING......");
   }
 
   return (

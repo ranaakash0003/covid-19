@@ -1,13 +1,17 @@
 import React from "react";
 import "./App.css";
-import Header from './components/header'
-import Home from './pages/Home'
+import Header from "./components/header/header";
+import Home from "./pages/Home";
+import Datatable from "./components/datatable/Datatable";
+import Footer from "./components/footer/Footer";
 
 function App() {
   return (
     <div>
-      <Header/>
-      <Home/>
+      <Header />
+      <Home />
+      <Datatable />
+      <Footer />
     </div>
   );
 }

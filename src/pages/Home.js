@@ -6,42 +6,44 @@ const Home = () => {
   const [confimedCount, setConfirmedCount] = useState(0);
   const [recoverCount, setrecoverCount] = useState(0);
   const [deathCount, setdeathCount] = useState(0);
-  useEffect(() => {
-    getConfirmedData();
-    getRecoverdData();
-    getDeathData();
-  }, [
-    setTimeout(() => {
-      window.location.reload();
-    }, 10000)
-  ]);
+  let today = new Date().toISOString().slice(0, 10);
 
-  async function getConfirmedData() {
-    const res = await axios("https://covid19.mathdro.id/api/");
-    setConfirmedCount(res.data.confirmed.value);
-  }
-  async function getRecoverdData() {
-    const res = await axios("https://covid19.mathdro.id/api/");
-    setrecoverCount(res.data.recovered.value);
-  }
-  async function getDeathData() {
-    const res = await axios("https://covid19.mathdro.id/api/");
-    setdeathCount(res.data.deaths.value);
+  useEffect(() => {
+    getCoronaData();
+    let timerId = setInterval(() => {
+      getCoronaData();
+    }, 10000);
+    return () => {
+      clearInterval(timerId);
+    };
+  }, []);
+
+  async function getCoronaData() {
+    const res = await axios("https://corona.lmao.ninja/all");
+    setConfirmedCount(res.data.cases);
+    setrecoverCount(res.data.recovered);
+    setdeathCount(res.data.deaths);
+    console.log("CORONADAT COMING......");
   }
 
   return (
     <div>
+      <div className="section-title">
+        <p>
+          <span className="update-date">Last updated: &nbsp; {today}</span>
+        </p>
+      </div>
       <div className="home-container">
         <div className="section-container">
-          <h1>{confimedCount}</h1>
+          <h2 style={{ color: "rgb(201, 147, 49)" }}>{confimedCount}</h2>
           <span className="confirmed">CONFIRMED</span>
         </div>
         <div className="section-container">
-          <h1>{recoverCount}</h1>
+          <h2 style={{ color: "rgb(60, 175, 89)" }}>{recoverCount}</h2>
           <span className="recovery">RECOVERED</span>
         </div>
         <div className="section-container">
-          <h1>{deathCount}</h1>
+          <h2 style={{ color: "rgb(219, 61, 33)" }}>{deathCount}</h2>
           <span className="death">DEATH</span>
         </div>
       </div>

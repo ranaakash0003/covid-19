@@ -26,13 +26,13 @@ const Home = () => {
   }
 
   return (
-    <div>
+    <div className="home-container">
       <div className="section-title">
         <p>
-          <span className="update-date">Last updated: &nbsp; {today}</span>
+          <span>Last Updated: &nbsp; {today}</span>
         </p>
       </div>
-      <div className="home-container">
+      <div className="data-container">
         <div className="section-container">
           <h2 style={{ color: "rgb(201, 147, 49)" }}>{confimedCount}</h2>
           <span className="confirmed">CONFIRMED</span>

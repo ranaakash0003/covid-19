@@ -1,65 +1,64 @@
-.datatable-container{
-    width: 80%;
-    display: block;
-    margin: 20px auto;
+.datatable-container {
+  width: 80%;
+  display: block;
+  margin: 20px auto;
 }
 
-thead{
-    background: rgb(38, 34, 41) !important;
-    color: white !important;
+thead {
+  background: rgb(38, 34, 41) !important;
+  color: white !important;
 }
 
-.search-label{
-    display: block !important;
-    margin: 70px auto 20px !important;
-    width: 50%;
-
+.search-label {
+  display: block !important;
+  margin: 70px auto 20px !important;
+  width: 50%;
 }
 
-.form-control{
-    border: 2px solid rgb(59, 42, 87);
-    border-radius: 20px;
+.form-control {
+  border: 2px solid rgb(59, 42, 87);
+  border-radius: 20px;
 }
 
 .page-item.active .page-link {
-    z-index: 3;
-    color: #fff;
-    background-color: rgb(38, 34, 41);
-    border-color: rgb(38, 34, 41);
+  z-index: 3;
+  color: #fff;
+  background-color: rgb(38, 34, 41);
+  border-color: rgb(38, 34, 41);
 }
 
 .page-link {
-    position: relative;
-    display: block;
-    padding: .5rem .75rem;
-    margin-left: -1px;
-    line-height: 1.25;
-    color: rgb(38, 34, 41);
-    background-color: #fff;
-    border: 1px solid #dee2e6;
+  position: relative;
+  display: block;
+  padding: 0.5rem 0.75rem;
+  margin-left: -1px;
+  line-height: 1.25;
+  color: rgb(38, 34, 41);
+  background-color: #fff;
+  border: 1px solid #dee2e6;
 }
 
 .death-tag {
-    background: #d9534f;
-    text-align: center;
-    color: white;
-    border-radius: 5px;
-    width: 50px;
-    padding: 3px;
-    font-size: .8rem;
-    font-weight: 700;
-    line-height: 1.5;
-    border-radius: 3px;
-  }
-  .recover-tag {
-    background: #5cb85c;
-    text-align: center;
-    color: white;
-    border-radius: 5px;
-    width: 50px;
-    padding: 3px;
-    font-size: .8rem;
-    font-weight: 700;
-    line-height: 1.5;
-    border-radius: 3px;
-  }
+  background: #d9534f;
+  text-align: center;
+  color: white;
+  border-radius: 5px;
+  width: 50px;
+  padding: 3px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  line-height: 1.5;
+  border-radius: 3px;
+}
+.recover-tag {
+  background: #5cb85c;
+  text-align: center;
+  color: white;
+  border-radius: 5px;
+  width: 50px;
+  padding: 3px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  line-height: 1.5;
+  border-radius: 3px;
+}

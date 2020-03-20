@@ -29,7 +29,7 @@ const Home = () => {
     <div className="home-container">
       <div className="section-title">
         <p>
-          <span>Last Updated: &nbsp; {today}</span>
+          <span>Updated: &nbsp; {today}</span>
         </p>
       </div>
       <div className="data-container">

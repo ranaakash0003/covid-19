@@ -4,7 +4,10 @@ import "./header.css";
 const header = () => {
   return (
     <div className="nav-container">
-      <h5>COVID-19 UPDATE</h5>
+      <div className="live-container">
+        <div className="live-tag"></div>
+        <p>COVID-19 &nbsp; WORLDWIDE</p>
+      </div>
     </div>
   );
 };

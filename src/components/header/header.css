@@ -5,11 +5,39 @@
     opacity: .8;
 }
 
-.nav-container h5{
+.nav-container p{
     color: white;
     display: block;
     margin:auto;
     text-align: center;
     padding-top: 20px;
-    font-size: large;
+    font-size: 1rem;
+    font-weight: 500;
 }
+
+.live-container{
+    display: flex;
+    justify-content: space-between;
+    
+  }
+  
+  .live-tag{
+    width: 30px;
+    height: 30px;
+    border-radius: 40px;
+    background-color: red;
+    display: block;
+    margin: 17px auto 0px;
+    position: relative;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes example {
+    0%   {background-color:red; top:0px;}
+    25%  {background-color:rgb(236, 110, 27); top:0px;}
+    50%  {background-color:rgb(252, 135, 26); top:0px;}
+    75%  {background-color:rgb(235, 75, 75); top:0px;}
+    100% {background-color:red; top:0px;}
+  }

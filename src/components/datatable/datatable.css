@@ -42,24 +42,24 @@ thead {
 .death-tag {
   background: #d9534f;
   text-align: center;
-  color: white;
+  color: rgb(238, 237, 237);
   border-radius: 5px;
   width: 50px;
   padding: 3px;
   font-size: 0.8rem;
-  font-weight: 700;
+  /* font-weight: 700; */
   line-height: 1.5;
   border-radius: 3px;
 }
 .recover-tag {
   background: #5cb85c;
   text-align: center;
-  color: white;
+  color:rgb(238, 237, 237);
   border-radius: 5px;
   width: 50px;
   padding: 3px;
   font-size: 0.8rem;
-  font-weight: 700;
+  /* font-weight: 700; */
   line-height: 1.5;
   border-radius: 3px;
 }
@@ -68,31 +68,31 @@ thead {
   thead {
     background: rgb(38, 34, 41) !important;
     color: white !important;
-    font-size: 0.55rem;
+    font-size: 0.39rem;
     word-wrap: break-word;
   }
 
   .death-tag {
     background: #d9534f;
     text-align: center;
-    color: white;
+    color: rgb(238, 237, 237);
     border-radius: 5px;
     width: 33px;
     padding: 3px;
     font-size: 0.8rem;
-    font-weight: 700;
+    /* font-weight: 700; */
     line-height: 1.5;
     border-radius: 3px;
   }
   .recover-tag {
     background: #5cb85c;
     text-align: center;
-    color: white;
+    color: rgb(238, 237, 237);
     border-radius: 5px;
     width: 33px;
     padding: 3px;
     font-size: 0.8rem;
-    font-weight: 700;
+    /* font-weight: 700; */
     line-height: 1.5;
     border-radius: 3px;
   }

@@ -15,10 +15,11 @@
 }
 
 .section-title {
-  width: 310px;
-  line-height: 45px;
+  width: 250px;
   background: #eee;
-  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   margin: 25px auto;
   border-radius: 5px;
   text-align: center;
@@ -31,10 +32,29 @@
   margin: auto;
 }
 
+.updated-tag{
+  background: rgb(108, 121, 132);
+  border-radius: 0px;
+  padding: 5px;
+  color: #F0F0F0
+}
+
 .section-container h2 {
   display: block;
   margin: 3px auto;
 }
+.affected{
+background: rgb(108, 121, 132);
+padding: 5px 8px;
+border-radius: 5px;
+/* font-weight: normal; */
+font-size: .9rem;
+text-align: center;
+color: white;
+display: block;
+margin: auto;
+}
+
 .confirmed {
   padding: 5px;
   border-radius: 5px;

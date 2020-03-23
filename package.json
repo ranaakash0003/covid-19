@@ -12,6 +12,7 @@
     "bootstrap4": "0.0.1-security",
     "gh-pages": "^2.2.0",
     "mdbreact": "^4.25.4",
+    "moment": "^2.24.0",
     "react": "^16.13.0",
     "react-bootstrap": "^0.32.4",
     "react-bootstrap-table-next": "^4.0.0",

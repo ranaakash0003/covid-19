@@ -1,20 +1,20 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import "./home.css";
-// import moment from 'moment';
+import moment from 'moment';
 
 
 const Home = () => {
   const [confimedCount, setConfirmedCount] = useState(0);
   const [recoverCount, setrecoverCount] = useState(0);
   const [deathCount, setdeathCount] = useState(0);
-  const [updateDate, setUpdateDate] = useState(new Date().toLocaleString())
+  const [updateDate, setUpdateDate] = useState(moment().format('Do MMMM YYYY, h:mm:ss a'))
   
   useEffect(() => {
     getCoronaData();
     let timerId = setInterval(() => {
       getCoronaData();
-      setUpdateDate(new Date().toLocaleString())
+      setUpdateDate(moment().format('Do MMMM YYYY, h:mm:ss a'))
     }, 10000);
     return () => {
       clearInterval(timerId);
@@ -32,7 +32,7 @@ const Home = () => {
     <div className="home-container">
       <div className="section-title">
         <p>
-          <span>Updated: &nbsp; {updateDate}</span>
+          <span>UPDATED :&nbsp; {updateDate}</span>
         </p>
       </div>
       <div className="data-container">

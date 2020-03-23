@@ -7,6 +7,15 @@
   justify-content: space-evenly;
 }
 
+.count-chart{
+  width: 80%;
+  display: block;
+  margin: 20px auto;
+  /* background: #eee; */
+  border-radius: 8px;
+}
+
+
 .section-container {
   display: flex;
   margin-top: 70px;

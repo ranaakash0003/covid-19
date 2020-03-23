@@ -5,8 +5,7 @@ import "react-bootstrap-table-next/dist/react-bootstrap-table2.min.css";
 import "./datatable.css";
 import ToolkitProvider, { Search } from "react-bootstrap-table2-toolkit";
 import axios from "axios";
-import paginationFactory from 'react-bootstrap-table2-paginator';
-
+import paginationFactory from "react-bootstrap-table2-paginator";
 
 const { SearchBar } = Search;
 
@@ -14,7 +13,15 @@ const columns = [
   {
     dataField: "country",
     text: "Country",
-    sort: true
+    sort: true,
+    formatter: (cellContent, row) => {
+      return (
+        <div className="country-container">
+          {row.country}
+          <img src={row.countryInfo.flag} alt={row.countryInfo.iso3} width="50px" />
+        </div>
+      );
+    }
   },
   {
     dataField: "cases",
@@ -36,10 +43,7 @@ const columns = [
     text: "Today Deaths",
     sort: true,
     formatter: (cellContent, row) => {
-      return (
-        <h6 className="death-tag">{row.todayDeaths}
-        </h6>
-      );
+      return <h6 className="death-tag">{row.todayDeaths}</h6>;
     }
     // style: {
     //   color: "red",
@@ -53,10 +57,7 @@ const columns = [
     text: "Recovered",
     sort: true,
     formatter: (cellContent, row) => {
-      return (
-        <h6 className="recover-tag">{row.recovered}
-        </h6>
-      );
+      return <h6 className="recover-tag">{row.recovered}</h6>;
     }
   }
 ];
@@ -68,17 +69,17 @@ const defaultSorted = [
 ];
 
 const Datatable = () => {
-    const [globalData, setGlobalData] = useState([]);
+  const [globalData, setGlobalData] = useState([]);
 
-    useEffect(() => {
-      getGlobalData();
-    }, []);
+  useEffect(() => {
+    getGlobalData();
+  }, []);
 
-    async function getGlobalData() {
-      const res = await axios("https://corona.lmao.ninja/countries");
+  async function getGlobalData() {
+    const res = await axios("https://corona.lmao.ninja/countries");
     //   console.log("FFF$$$$$$$", res.data);
-      setGlobalData(res.data);
-    }
+    setGlobalData(res.data);
+  }
 
   return (
     <div className="datatable-container">
@@ -105,7 +106,7 @@ const Datatable = () => {
               data={globalData}
               columns={columns}
               defaultSorted={defaultSorted}
-              pagination={ paginationFactory() }
+              pagination={paginationFactory()}
             />
           </div>
         )}

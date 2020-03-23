@@ -9,7 +9,10 @@ thead {
   color: white !important;
   font-size: 0.9rem;
 }
-
+.country-container{
+  display: flex;
+  justify-content: space-between;
+}
 .search-label {
   display: block !important;
   margin: 70px auto 20px !important;
@@ -70,6 +73,13 @@ thead {
     color: white !important;
     font-size: 0.39rem !important;
     word-wrap: break-word;
+  }
+  .country-container{
+    display: flex;
+    flex-direction: column;
+  }
+  .country-container img{
+    width: 25px;
   }
 
   .death-tag {

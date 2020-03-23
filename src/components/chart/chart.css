@@ -1,0 +1,56 @@
+.chart-container {
+  display: flex;
+  justify-content: space-around;
+  margin: 50px auto 30px;
+  background: #eee;
+  border-radius: 8px;
+}
+
+.global-chart {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin: 30px auto 30px;
+}
+.bd-chart {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin: 30px auto 30px;
+}
+
+p .chart-tag{
+    text-align: center;
+    padding: 5px 7px;
+    color: white;
+    border-radius: 5px;
+    font-size: .95rem;
+    background: #7B8791;
+}
+
+@media all and (max-width: 600px) {
+    .chart-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin: 20px auto 20px;
+        background: #eee;
+        border-radius: 8px;
+      }
+      .global-chart {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 300px;
+        width: 260px;
+        margin: 10px auto;
+      }
+      .bd-chart {
+        display: flex;
+        flex-direction: column;
+        height: 300px;
+        width: 260px;
+        margin: 10px auto;
+      }
+      
+}

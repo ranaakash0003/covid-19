@@ -3,6 +3,7 @@ import axios from "axios";
 import "./home.css";
 import moment from "moment";
 import Chart from "../components/chart/Chart";
+import spinner from "../assets/spinner.gif";
 
 const Home = () => {
   const [affected, setAffected] = useState(0);
@@ -100,7 +101,9 @@ const Home = () => {
           </div>
         </>
       ) : (
-        ""
+        <div>
+          <img className="spinner" src={spinner} alt="...loading" />
+        </div>
       )}
     </div>
   );

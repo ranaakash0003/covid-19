@@ -9,6 +9,22 @@ import paginationFactory from "react-bootstrap-table2-paginator";
 
 const { SearchBar } = Search;
 
+const options = {
+  paginationSize: 5,
+  pageStartIndex: 1,
+  disablePageTitle: true,
+  sizePerPageList: [
+    {
+      text: "5",
+      value: 5
+    },
+    {
+      text: "10",
+      value: 10
+    }
+  ]
+};
+
 const columns = [
   {
     dataField: "country",
@@ -18,7 +34,11 @@ const columns = [
       return (
         <div className="country-container">
           {row.country}
-          <img src={row.countryInfo.flag} alt={row.countryInfo.iso3} width="50px" />
+          <img
+            src={row.countryInfo.flag}
+            alt={row.countryInfo.iso3}
+            width="50px"
+          />
         </div>
       );
     }
@@ -45,12 +65,6 @@ const columns = [
     formatter: (cellContent, row) => {
       return <h6 className="death-tag">{row.todayDeaths}</h6>;
     }
-    // style: {
-    //   color: "red",
-    //   fontWeight: "700",
-    //   textAlign: "center",
-    //   borderRadius: "5px"
-    // }
   },
   {
     dataField: "recovered",
@@ -87,7 +101,7 @@ const Datatable = () => {
         keyField="id"
         data={globalData}
         columns={columns}
-        search={{ searchFormatted: true }}
+        search={{ searchFormatted: false }}
       >
         {props => (
           <div>
@@ -96,6 +110,7 @@ const Datatable = () => {
               delay={1000}
               {...props.searchProps}
             />
+            
             <hr />
             <BootstrapTable
               {...props.baseProps}
@@ -106,7 +121,7 @@ const Datatable = () => {
               data={globalData}
               columns={columns}
               defaultSorted={defaultSorted}
-              pagination={paginationFactory()}
+              pagination={paginationFactory(options)}
             />
           </div>
         )}

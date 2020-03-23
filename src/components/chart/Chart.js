@@ -4,7 +4,6 @@ import "./chart.css";
 
 const Chart = props => {
   let active = props.case - (props.recovered + props.death);
-  console.log("propssss", props.recovered);
   const globalData = {
     labels: ["Active", "Recovered", "Death"],
     datasets: [

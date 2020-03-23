@@ -68,30 +68,35 @@ thead {
   thead {
     background: rgb(38, 34, 41) !important;
     color: white !important;
-    font-size: 0.39rem;
-    word-wrap: break-word;
+    font-size: 0.37rem;
+    padding: 0px 5px !important;
+   
   }
 
   .death-tag {
+    display: block !important;
+    margin: auto !important;
     background: #d9534f;
     text-align: center;
     color: rgb(238, 237, 237);
     border-radius: 5px;
     width: 33px;
     padding: 3px;
-    font-size: 0.8rem;
+    font-size: 0.55rem;
     /* font-weight: 700; */
     line-height: 1.5;
     border-radius: 3px;
   }
   .recover-tag {
+    display: block !important;
+    margin: auto !important;
     background: #5cb85c;
     text-align: center;
     color: rgb(238, 237, 237);
     border-radius: 5px;
     width: 33px;
     padding: 3px;
-    font-size: 0.8rem;
+    font-size: 0.55rem;
     /* font-weight: 700; */
     line-height: 1.5;
     border-radius: 3px;

@@ -68,9 +68,8 @@ thead {
   thead {
     background: rgb(38, 34, 41) !important;
     color: white !important;
-    font-size: 0.37rem;
-    padding: 0px 5px !important;
-   
+    font-size: 0.39rem !important;
+    word-wrap: break-word;
   }
 
   .death-tag {

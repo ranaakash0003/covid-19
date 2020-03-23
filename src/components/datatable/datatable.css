@@ -116,4 +116,11 @@ thead {
     background-color: #fff;
     border: 1px solid #dee2e6;
   }
+
+  .search-label {
+    display: block !important;
+    margin: 70px auto 20px !important;
+    width: 70%;
+  }
+  
 }

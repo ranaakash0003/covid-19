@@ -1,0 +1,40 @@
+/* .map-container{
+  width: 50%;
+  background: yellow;
+} */
+
+.hos-view-container {
+  display: flex;
+  width: 100%;
+  flex-direction: row-reverse;
+}
+/*
+.datalist-container {
+  display: flex;
+  flex-direction: column;
+  border-radius: 3px;
+  margin: auto 5px;
+  width: 50%;
+  border: .5px solid rgb(68, 64, 64);
+}
+
+.hos-card {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.hos-title {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: rgb(238, 237, 237);
+  
+}
+.hos-content {
+  margin: auto 3px;
+} */
+
+/* .ant-card-head-wrapper{
+  background: #d1dbf5;
+} */

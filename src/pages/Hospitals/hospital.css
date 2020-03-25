@@ -1,0 +1,10 @@
+.hospitals-container {
+  display: flex;
+  width: 100%;
+}
+.map-view {
+  width: 40%;
+}
+.hospital-data-view {
+  width: 40%;
+}

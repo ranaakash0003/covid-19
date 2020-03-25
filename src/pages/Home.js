@@ -4,6 +4,9 @@ import "./home.css";
 import moment from "moment";
 import Chart from "../components/chart/Chart";
 import spinner from "../assets/spinner.gif";
+import Header from "../components/header/header";
+import Datatable from "../components/datatable/Datatable";
+import Footer from "../components/footer/Footer";
 
 const Home = () => {
   const [affected, setAffected] = useState(0);
@@ -55,6 +58,7 @@ const Home = () => {
 
   return (
     <div className="home-container">
+      <Header />
       {confirmed != 0 ? (
         <>
           <div className="section-title">
@@ -105,6 +109,8 @@ const Home = () => {
           <img className="spinner" src={spinner} alt="...loading" />
         </div>
       )}
+      <Datatable />
+      <Footer />
     </div>
   );
 };

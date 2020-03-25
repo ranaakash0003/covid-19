@@ -1,0 +1,23 @@
+.hospital-list-container {
+  display: flex;
+  flex-direction: column;
+  border-radius: 3px;
+  margin: auto 3px;
+}
+
+.hos-card {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+ 
+}
+
+.hos-title {
+  display: flex;
+  justify-content: space-between;
+  margin: auto 3px;
+  background: #ee7070;
+}
+.hos-content {
+  margin: auto 3px;
+}

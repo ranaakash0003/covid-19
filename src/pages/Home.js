@@ -35,21 +35,21 @@ const Home = () => {
 
   async function getCoronaData() {
     // let nf = new Intl.NumberFormat();
-    const res = await axios("https://corona.lmao.ninja/all");
+    const res = await axios("https://corona.lmao.ninja/v2/all");
     setConfirmedCount(res.data.cases);
     setrecoverCount(res.data.recovered);
     setdeathCount(res.data.deaths);
     // setConfirmedCount(nf.format(res.data.cases));
     // setrecoverCount(nf.format(res.data.recovered));
     // setdeathCount(nf.format(res.data.deaths));
-    const response = await axios("https://corona.lmao.ninja/countries");
+    const response = await axios("https://corona.lmao.ninja/v2/countries");
     // setAffected(nf.format(response.data.length));
     setAffected(response.data.length);
   }
 
   async function getBdData() {
     const res = await axios.get(
-      "https://corona.lmao.ninja/countries/bangladesh"
+      "https://corona.lmao.ninja/v2/countries/bangladesh"
     );
     setBdActive(res.data.active);
     setBdRrecoverCount(res.data.recovered);

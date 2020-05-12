@@ -90,7 +90,7 @@ const Datatable = () => {
   }, []);
 
   async function getGlobalData() {
-    const res = await axios("https://corona.lmao.ninja/countries");
+    const res = await axios("https://corona.lmao.ninja/v2/countries");
     //   console.log("FFF$$$$$$$", res.data);
     setGlobalData(res.data);
   }
